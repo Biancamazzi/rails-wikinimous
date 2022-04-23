@@ -1,0 +1,13 @@
+
+<%# <%= link_to "Editar #{@articles.title}", edit_task_path(@articles) %> %>
+<h2><%= @article.title %></h2>
+<p><%= @article.content %></p>
+
+<%# <div><%= link_to 'Editar', article_path(@article) %></div>
+
+
+<div><%= link_to 'Voltar para lista', articles_path %></div>
+<br />
+<div><%= link_to 'Delete', article_path(@article),
+            method: :delete,
+            data: { confirm: "Are you sure?" } %></div>

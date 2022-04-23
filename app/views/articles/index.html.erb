@@ -1,0 +1,11 @@
+<h2>My articles</h2>
+
+<div>
+  <% @articles.each do |article| %>
+    <div><%= link_to article.title, article_path(article) %></div>
+    <div><%= article.content %></div>
+
+  <% end %>
+</div>
+<br />
+<%# <div><%= link_to 'add a new task', articles_path %></div>
